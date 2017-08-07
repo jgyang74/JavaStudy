@@ -23,20 +23,27 @@ public class Car {
 	   String name;    
        int number;
        
+       public int gas;
+       
        public Car(String name){
            this.name = name;
        }
        
        public Car() {
-    	   this("no name",0);
+    	  // this("no name",0);
     	 //this괄호 열고로 시작하면 자신의 생성자를 호출하는 것이다.
     	 //자기 자신의 생성자를 호출함으로써 비슷한 코드가 중복되서 나오는 것을 방지할 수 있다.
+    	   System.out.println("Car basic constructor");
        }
        
        public Car(String name, int number) {
     	   this.name = name;
     	   this.number = number;
     	   
+       }
+       
+       public void run() {
+    	   System.out.println(" Car run!!!");
        }
 }
 
